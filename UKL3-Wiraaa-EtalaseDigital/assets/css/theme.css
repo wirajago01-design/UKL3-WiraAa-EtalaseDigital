@@ -1,0 +1,125 @@
+/* Tema UKK Lvl 3: merah maroon, abu-abu, putih.
+   Dimuat SETELAH Bootstrap supaya warna biru/hijau/kuning bawaan Bootstrap tertimpa. */
+:root {
+    --maroon:       #800000;
+    --maroon-dark:  #5c0000;
+    --maroon-light: #f6e9e9;
+    --gray-dark:    #343a40;
+    --gray:         #6c757d;
+    --gray-light:   #e9ecef;
+
+    --bs-primary: #800000;
+    --bs-primary-rgb: 128, 0, 0;
+    --bs-link-color: #800000;
+    --bs-link-color-rgb: 128, 0, 0;
+    --bs-link-hover-color: #5c0000;
+    --bs-link-hover-color-rgb: 92, 0, 0;
+}
+
+body { background-color: #f4f4f5; }
+
+/* ---------- Navbar ---------- */
+.navbar.bg-dark { background-color: var(--maroon) !important; }
+.navbar .nav-link.active { color: #ffffff; font-weight: 600; border-bottom: 2px solid #ffffff; }
+.navbar .badge.bg-primary { background-color: #ffffff !important; color: var(--maroon); }
+.navbar .btn-outline-danger {
+    --bs-btn-color: #ffffff;
+    --bs-btn-border-color: #ffffff;
+    --bs-btn-hover-bg: #ffffff;
+    --bs-btn-hover-color: var(--maroon);
+    --bs-btn-hover-border-color: #ffffff;
+    --bs-btn-active-bg: var(--gray-light);
+    --bs-btn-active-color: var(--maroon);
+}
+
+/* ---------- Tombol ---------- */
+.btn-primary,
+.btn-success {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--maroon);
+    --bs-btn-border-color: var(--maroon);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: var(--maroon-dark);
+    --bs-btn-hover-border-color: var(--maroon-dark);
+    --bs-btn-focus-shadow-rgb: 128, 0, 0;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #470000;
+    --bs-btn-active-border-color: #470000;
+    --bs-btn-disabled-bg: var(--maroon);
+    --bs-btn-disabled-border-color: var(--maroon);
+}
+.btn-warning {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--gray);
+    --bs-btn-border-color: var(--gray);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #565e64;
+    --bs-btn-hover-border-color: #565e64;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #4d5154;
+    --bs-btn-active-border-color: #4d5154;
+}
+.btn-danger {
+    --bs-btn-color: #ffffff;
+    --bs-btn-bg: var(--gray-dark);
+    --bs-btn-border-color: var(--gray-dark);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-hover-bg: #1f2327;
+    --bs-btn-hover-border-color: #1f2327;
+    --bs-btn-active-color: #ffffff;
+    --bs-btn-active-bg: #1a1e21;
+    --bs-btn-active-border-color: #1a1e21;
+}
+.btn-outline-primary {
+    --bs-btn-color: var(--maroon);
+    --bs-btn-border-color: var(--maroon);
+    --bs-btn-hover-bg: var(--maroon);
+    --bs-btn-hover-border-color: var(--maroon);
+    --bs-btn-hover-color: #ffffff;
+    --bs-btn-active-bg: var(--maroon-dark);
+    --bs-btn-active-border-color: var(--maroon-dark);
+    --bs-btn-active-color: #ffffff;
+}
+.btn-outline-secondary {
+    --bs-btn-color: var(--gray);
+    --bs-btn-border-color: var(--gray);
+    --bs-btn-hover-bg: var(--gray);
+    --bs-btn-hover-border-color: var(--gray);
+    --bs-btn-hover-color: #ffffff;
+}
+
+/* ---------- Teks & ikon berwarna ---------- */
+.text-primary,
+.text-success { color: var(--maroon) !important; }
+.bg-primary   { background-color: var(--maroon) !important; }
+.bg-success   { background-color: var(--maroon) !important; }
+
+/* ---------- Form ---------- */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--maroon);
+    box-shadow: 0 0 0 0.25rem rgba(128, 0, 0, 0.2);
+}
+.input-group-text { background-color: var(--gray-light); color: var(--gray-dark); }
+
+/* ---------- Alert ---------- */
+.alert-danger  { background-color: var(--maroon-light); border-color: #d9b3b3; color: var(--maroon); }
+.alert-success { background-color: var(--gray-light);    border-color: #ced4da; color: var(--gray-dark); }
+
+/* ---------- Kartu galeri ---------- */
+.project-card:hover,
+.project-card:focus-visible {
+    box-shadow: 0 8px 20px rgba(128, 0, 0, 0.18);
+    outline: none;
+}
+.card-title { color: var(--gray-dark); }
+
+/* ---------- Logo di navbar (chip putih agar logo merah/abu terbaca di latar maroon) ---------- */
+.navbar .brand-logo {
+    height: 38px;
+    width: 38px;
+    object-fit: contain;
+    background: #ffffff;
+    border-radius: 8px;
+    padding: 3px;
+}
